@@ -1,0 +1,244 @@
+/* Navbar CSS */
+
+nav{
+    padding: 10px;
+    height: 30px;
+    /* width: 100%; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    /* border: 1px solid black; */
+    position: sticky;
+    top: 0px;
+}
+
+.left{
+    font-size: 20px;
+}
+
+nav button{
+    border: 0px;
+    margin: 10px;
+    background: transparent;
+    cursor: pointer;
+}
+
+nav button:hover{
+    color: blue;
+}
+
+nav select, option{
+    border: 0px;
+    margin: 10px;
+}
+
+.select1{
+    width: 150px;
+}
+
+
+/* HomePage CSS */
+
+.greet{
+    height: 600px;
+    width: 100%;
+    margin-top: -30px;
+    background-image: url('https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/03/photo-1443527216320-7e744084f5a7-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.greetMessage{
+    width: 60%;
+    /* margin-top: 10px; */
+    color: white;
+}
+
+.m1{
+    font-size: 50px;
+    padding-top: 170px;
+}
+
+.greetButtons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.greetButtons button{
+    height: 50px;
+    width: 200px;
+    margin: 5px;
+}
+
+.greetButton1{
+    background: blue;
+    color: white;
+    border: 2px solid blue;
+    cursor: pointer;
+}
+
+.greetButton1:hover{
+    background: rgb(43, 43, 155);
+    color: white;
+    border: 2px solid blue;
+}
+
+
+.greetButton2{
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+.greetButton2:hover{
+    background: white;
+    color: black;
+    border: 2px solid white;
+}
+
+
+/* SEO */
+
+.seoContainer{
+    display: flex;
+    /* flex-wrap: wrap !important; */
+    align-items: center;
+    justify-content: space-around;
+    /* border: 1px solid black; */
+}
+
+.imgDiv{
+    width: 700px;
+}
+
+.imgDiv img{
+    width: 100%;
+}
+
+.paraDiv{
+    width: 35%;
+    /* border: 1px solid black; */
+}
+
+/* Portfolio section */
+.portfolioContainer{
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    flex-wrap: wrap !important;
+    align-items: center;
+    justify-content: space-around; 
+}
+
+/* Parallax section */ 
+
+.parallaxContainer{
+    height: 600px;
+    width: 100%;
+    /* border: 1px solid black; */
+    background-image: url('https://cdn.pixabay.com/photo/2016/12/17/14/33/wave-1913559_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.parallaxContainer div{
+    /* margin-top: 50px; */
+}
+
+/* Limitless Options */
+
+.limitlessContainer{
+    height: 300px;
+    width: 100%;
+}
+
+.limitMessage{
+    width: 60%;
+}
+
+.l1{
+    font-size: 50px;
+    padding-top: 40px;
+    color: black;
+}
+
+/* Footer CSS */
+
+footer{
+    height: 100px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background: black;
+    color: white;
+}
+
+.fRight{
+    display: flex;
+    flex-direction: column !important;
+    align-items: center;
+    justify-content: flex-end;
+    /* border: 1px solid white; */
+}
+
+.social{
+    display: flex;
+    /* border: 1px solid red; */
+}
+
+.social section{
+    margin: 10px;
+    cursor: pointer;
+}
+
+.social section:hover{
+    color: blue;
+}
+
+.goToTop{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 300px;
+}
+
+.goToTop section{
+    height: 25px;
+    width: 25px;
+    border: 1px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.goToTop section:hover{
+    border: 1.5px solid white;
+}
+
+.goToTop a{
+    color: white;
+}
+
+
+@media (min-width: 300px) and (max-width: 779px) {
+    .seoContainer{
+        flex-direction: column;
+    }
+
+    .portfolioContainer{
+        flex-direction: column;
+    }
+
+    .paraDiv{
+        width: 100%;
+        margin: 20px;
+    }
+    
+}
