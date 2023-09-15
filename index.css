@@ -11,6 +11,7 @@ nav{
     /* border: 1px solid black; */
     position: sticky;
     top: 0px;
+    /* border: 1px solid red; */
 }
 
 .left{
@@ -48,6 +49,7 @@ nav select, option{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    /* border: 1px solid red; */
 }
 
 .greetMessage{
@@ -108,11 +110,13 @@ nav select, option{
     /* flex-wrap: wrap !important; */
     align-items: center;
     justify-content: space-around;
-    /* border: 1px solid black; */
+    /* border: 1px solid red; */
 }
 
 .imgDiv{
-    width: 700px;
+    width: auto;
+    /* border: 1px solid red; */
+
 }
 
 .imgDiv img{
@@ -152,7 +156,7 @@ nav select, option{
 /* Limitless Options */
 
 .limitlessContainer{
-    height: 300px;
+    height: 280px;
     width: 100%;
 }
 
@@ -161,9 +165,113 @@ nav select, option{
 }
 
 .l1{
-    font-size: 50px;
+    font-size: 30px;
     padding-top: 40px;
     color: black;
+}
+
+/* imgSection */
+
+.imgSection{
+    height: 800px;
+    width: 95%;
+    margin-left: 25px;
+    margin-right: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url('https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/12/photo-1440557653082-e8e186733eeb-1.jpg'); */
+}
+.imgSection img{
+    height: 100%;
+    width: 100%;
+}
+
+/* latestProjects */
+
+.latestProjects{
+    /* background-color: black; */
+    height: auto;
+    width: 100%;
+    /* border: 1px solid red; */
+    background: black;
+    color: white;
+}
+
+.latestProjects-section{
+    /* width: 10%; */
+    /* padding: 40px; */
+    color: white;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.projects{
+    display: flex; 
+    flex-wrap: wrap;
+    align-items: center;
+    /* border: 5px solid blue !important; */
+}
+
+.projectCard{
+    height: 225px;
+    width: 310px;
+    /* border: 1px solid red; */
+}
+
+.projectCard img{
+    height: 100%;
+    width: 100%;
+    /* border: 1px solid black; */
+}
+
+/* What Our Customers Say  */
+
+.customers{
+    height: 467px;
+    margin-top: -22px;
+    color: white;
+    background-image: url('https://149842022.v2.pressablecdn.com/wp-content/uploads/sites/59/2016/12/photo-1451417379553-15d8e8f49cde.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* border: 0px; */
+}
+
+.customers h1{
+    padding-top: 90px;
+}
+
+/* Our Main Clients */
+
+.mainClients{
+    height: 300px;
+    align-items: center;
+    /* border: 2px solid red; */
+}
+
+.mainClients h1{
+    padding-top: 90px;
+}
+
+/* Do you like this awesome WordPress theme */
+.downloadContainer{
+    height: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    height: 250px;
+    background: rgb(241, 235, 235);
+}
+
+.downloadButton1{
+    background-color: blue !important;
+    border: 1px solid blue;
+    height: 40px;
 }
 
 /* Footer CSS */
@@ -228,8 +336,17 @@ footer{
 
 
 @media (min-width: 300px) and (max-width: 779px) {
+    .greet{
+        background-size: cover;
+    }
+    .greetMessage{
+        /* margin-top: -30px; */
+    }
     .seoContainer{
         flex-direction: column;
+    }
+    .greetButtons{
+        margin-bottom: 20px;
     }
 
     .portfolioContainer{
@@ -239,6 +356,29 @@ footer{
     .paraDiv{
         width: 100%;
         margin: 20px;
+    }
+    .imgSection{
+        height: 100%;
+        width: 100%;
+        margin-left: 0px;
+        margin-right: opx;
+    }
+    /* .imgSection img{
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }     */
+
+    .latestProjects{
+        width: 100%;
+    }
+
+    .projectCard{
+        height: 100%;
+        width: 100%;
+        /* border: 1px solid red; */
     }
     
 }
