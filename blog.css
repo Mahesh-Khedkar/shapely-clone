@@ -1,0 +1,189 @@
+/* Our Main Clients */
+
+.blog{
+    height: 300px;
+    width: 100%;
+    background: rgb(246, 246, 246);
+    /* border: 1px solid black; */
+}
+
+.blog h1{
+    margin-left: 50px;
+    padding-top: 60px;
+    font-weight: 10;
+}
+
+.blogBody{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+/* Firsthalf */
+.firstHalf{
+    height: auto;
+    width: 63%;
+    margin-left: 20px;
+    /* border: 1px solid black; */
+}
+/* ------Card----- */
+.blogCard{
+    width: 100%;
+    height: 600px;
+    background-image: url('https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1453282716202-de94e528067c-1.jpg');
+    block-size: cover;
+    display: flex;
+    align-items:last baseline;
+    justify-content: start;
+    /* border: 1px solid black; */
+}
+
+.blogCardBtn{
+    height: 60px;
+    width: 50%;
+    background: white;
+    color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.blogCardBtn p{
+    border-bottom: 1px solid gray;
+    font-size: 12px;
+}
+
+/* ------Second Half----------- */
+
+.secondHalf{
+    height: auto;
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: space-evenly;
+    /* border: 1px solid black; */
+}
+
+.blogSearchBox{
+    height: 50px;
+    width: 90%;
+    border: 1px solid gray;
+    display: flex;
+    opacity: 1;
+    /* align-items: center;
+    justify-content: safe; */
+}
+
+.blogSearchBoxInput{
+    width: 90%;
+}
+
+
+.blogSearchBoxInput input{
+    height: 97%;
+    width: 99%;
+    opacity: 1;
+    border: none;
+}
+
+.blogSearchBoxInput input::selection{
+    border: 1px solid blue !important;
+    opacity: 1;
+}
+
+.blogSearchBoxIcon{
+    height: 100%;
+    width: 10%;
+    /* padding-left: 0px !important; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+}
+
+.blogSearchBox:hover{
+    border: 1px solid blue;
+    opacity: 1;
+}
+
+.blogSearchBoxInput:hover{
+    border: 1px solid blue;
+    opacity: 1;
+}
+
+.blogSearchBoxIcon:hover{
+    border: 1px solid blue;
+    opacity: 1;
+}
+
+/* ------Top Posts--------- */
+
+.topPostsContainer h2{
+    font-weight: 2;
+}
+
+.topPosts{
+    /* margin-top: 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.topPostTemplate{
+    height: 45px;
+    width: 100%;
+    margin: 10px;
+    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.topPostTemplateImg{
+    height: 100%;
+    width: 11%;
+    /* border: 1px solid black; */
+}
+
+.topPostTemplateImg img{
+    height: 100%;
+    width: 100%;
+}
+
+.topPostTemplateText{
+    padding-left: 50px;
+    color: blue;
+}
+
+/* -- Recent Posts --*/
+.recentPosts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: ;
+}
+
+.recentPostTemplate{
+    height: 45px;
+    width: 100%;
+    margin: 10px;
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+
+.recentPostTemplateText{
+    color: gray;
+    align-self: flex-start;
+}
+
+.recentPostTemplateText:hover{
+    color: blue;
+}

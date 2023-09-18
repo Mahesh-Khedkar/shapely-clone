@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-Shapely</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./blog.css">
+    <link rel="stylesheet" href="./index.js">
+
+    <script src="https://kit.fontawesome.com/fa767818e2.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="left">
+            <h1><a href="index.html">Shapely Demo</a></h1>
+        </div>
+        <div class="right">
+            <button class="homeBtn"><a href="index.html">HOME</a></button>
+            <button>BLOG</button>
+            <button>PORTFOLIO</button>
+            <select class="select1">
+                <option value="">ABOUT THE TESTS</option>
+                <option value="">Page Image Allignment</option>
+                <option value="">Page Markup And Formating</option>
+                <option value="">Clearing Floats</option>
+                <option value="">Page With Comments</option>
+                <option value="">Page With Comments Disabled</option>
+            </select>
+            <select>
+                <option value="">Level1</option>
+                <option value="">Level2</option>
+                <option value="">Level2a</option>
+                <option value="">Level2b</option>
+            </select>
+            <button>SHOP</button>
+            <button style="color: blue;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <!-- Toggle Navbar -->
+        <div class="right right-menu">
+            <button id="menu-toggle" onclick="showMenu()">
+                <div class="togleContainer">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </button>
+            <div class="right">
+                <button><a href="index.html">HOME</a></button>
+                <button>BLOG</button>
+                <button>PORTFOLIO</button>
+                <select class="select1">
+                    <option value="">ABOUT THE TESTS</option>
+                    <option value="">Page Image Allignment</option>
+                    <option value="">Page Markup And Formating</option>
+                    <option value="">Clearing Floats</option>
+                    <option value="">Page With Comments</option>
+                    <option value="">Page With Comments Disabled</option>
+                </select>
+                <select>
+                    <option value="">Level1</option>
+                    <option value="">Level2</option>
+                    <option value="">Level2a</option>
+                    <option value="">Level2b</option>
+                </select>
+                <button>SHOP</button>
+                <button style="color: blue;">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+<!-- Blog -->
+
+    <div class="blog">
+        <h1>Blog</h1>
+    </div>
+<!-- Blog Body -->
+
+<div class="blogBody">
+    <div class="firstHalf">
+        <div class="blogCard">
+            <div class="blogCardBtn">
+                <!-- <button>NEWS</button> -->
+                <p>NEWS</p>
+            </div>
+        </div>
+    </div>
+
+ <!-- Second Half -->
+
+    <div class="secondHalf">
+        <div class="blogSearchBox">
+            <div class="blogSearchBoxInput">
+                <input type="text">
+            </div>
+            <div class="blogSearchBoxIcon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+
+     <!-- Top Posts         -->
+        <div class="topPostsContainer">
+            <h2>Top Posts</h2>
+            <div class="topPosts">
+                <div class="topPostTemplate">
+                    <div class="topPostTemplateImg">
+                        <img src="https://i0.wp.com/colorlibhub.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1453282716202-de94e528067c-1.jpg?resize=60%2C60&ssl=1" alt="">
+                    </div>
+                    <div class="topPostTemplateText">
+                        Template: StickyTemplate: Sticky
+                    </div>
+                </div>
+                <div class="topPostTemplate">
+                    <div class="topPostTemplateImg">
+                        <img src="https://i0.wp.com/colorlibhub.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1434472007488-8d47f604f644-1.jpg?resize=60%2C60&ssl=1" alt="">
+                    </div>
+                    <div class="topPostTemplateText">
+                        Markup: Title With Special Characters
+                    </div>
+                </div>
+                <div class="topPostTemplate">
+                    <div class="topPostTemplateImg">
+                        <img src="https://i0.wp.com/colorlibhub.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1440557653082-e8e186733eeb-1.jpg?resize=60%2C60&ssl=1" alt="">
+                    </div>
+                    <div class="topPostTemplateText">
+                        Template: More Tag
+                    </div>
+                </div>
+                <div class="topPostTemplate">
+                    <div class="topPostTemplateImg">
+                        <img src="https://i0.wp.com/colorlibhub.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1448518184296-a22facb4446f-1.jpg?resize=60%2C60&ssl=1" alt="">
+                    </div>
+                    <div class="topPostTemplateText">
+                        Edge Case: Nested And Mixed Lists
+                    </div>
+                </div>
+                <div class="topPostTemplate">
+                    <div class="topPostTemplateImg">
+                        <img src="https://i0.wp.com/colorlibhub.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1449168013943-3a15804bb41c-1.jpg?resize=60%2C60&ssl=1" alt="">
+                    </div>
+                    <div class="topPostTemplateText">
+                        Hello world!
+                    </div>
+                </div>
+                <div class="topPostTemplate">
+                    <div class="topPostTemplateImg">
+                        <img src="https://i0.wp.com/colorlibhub.com/shapely/wp-content/uploads/sites/59/2016/03/photo-1431492299426-2ea1ce429cc0-1.jpg?resize=60%2C60&ssl=1" alt="">
+                    </div>
+                    <div class="topPostTemplateText">
+                        Template: Excerpt (Defined)
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     <!-- Recent Posts         -->
+        <div class="topPostsContainer">
+            <h2>Recent Posts</h2>
+            <div class="recentPosts">
+                <div class="recentPostTemplate">
+                    <div class="recentPostTemplateText">
+                        Template: More Tag
+                    </div>
+                </div>
+                <div class="recentPostTemplate">
+                    <div class="recentPostTemplateText">
+                        Hello world!
+                    </div>
+                </div>
+                <div class="recentPostTemplate">
+                    <div class="recentPostTemplateText">
+                        Markup: HTML Tags and Formatting
+                    </div>
+                </div>
+                <div class="recentPostTemplate">
+                    <div class="recentPostTemplateText">
+                        Markup: Image Alignment
+                    </div>
+                </div>
+                <div class="recentPostTemplate">
+                    <div class="recentPostTemplateText">
+                        Markup: Text Alignment
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<!-- Footer -->
+
+    <footer>
+        <div class="fLeft">
+            <p>Theme by Colorlib Powered by WordPress</p>
+            <p style="color: red;">Cloned by Mahesh Khedkar</p>
+        </div>
+        <div class="fRight">
+            <section class="social">
+                <section>
+                    <i class="fa-brands fa-facebook-f"></i>
+                </section>
+                <section>
+                    <i class="fa-brands fa-twitter"></i>
+                </section>
+                <section>
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </section>
+                <section>
+                    <i class="fa-brands fa-youtube"></i>
+                </section>
+                <section>
+                    <i class="fa-brands fa-instagram"></i>
+                </section>
+            </section>
+            <br>
+            <div class="goToTop">
+                <a href="index.html">
+                    <section>
+                        <strong>^</strong>
+                    </section>
+                </a>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>

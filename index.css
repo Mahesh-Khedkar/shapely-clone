@@ -1,3 +1,11 @@
+/* body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+
 /* Navbar CSS */
 
 nav{
@@ -6,7 +14,7 @@ nav{
     /* width: 100%; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     background: white;
     /* border: 1px solid black; */
     position: sticky;
@@ -16,6 +24,10 @@ nav{
 
 .left{
     font-size: 20px;
+}
+
+.left h1{
+    font-weight: 10;
 }
 
 nav button{
@@ -38,6 +50,43 @@ nav select, option{
     width: 150px;
 }
 
+/* Toggle */
+.right-menu {
+    display: none; /* Hide the "right-menu" by default */
+    background: black;
+    color: white;
+}
+
+.menu-toggle{
+    /* margin: 30px; */
+}
+
+.togleContainer{
+    height: 30px;
+    width: 30px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.togleContainer div{
+    height: 1px;
+    width: 15px;
+    margin: 2px;
+    background: black;
+    border: 1px solid black;
+}
+
+.right right-menu{
+    height: auto;
+    background: black;
+    color: white;
+}
+
+nav a{
+    color: black !important;
+}
 
 /* HomePage CSS */
 
@@ -129,13 +178,21 @@ nav select, option{
     /* border: 1px solid black; */
 }
 
+.seoContainer button{
+    height: 40px;
+}
+
 /* Portfolio section */
 .portfolioContainer{
     background-color: rgb(243, 243, 243);
     display: flex;
-    flex-wrap: wrap !important;
+    /* flex-wrap: wrap !important; */
     align-items: center;
     justify-content: space-around; 
+}
+
+.portfolioContainer button{
+    height: 40px;
 }
 
 /* Parallax section */ 
@@ -491,13 +548,33 @@ footer{
     color: white;
 }
 
+a{
+    color: white;
+    text-decoration: none;
+}
 
 @media (min-width: 300px) and (max-width: 779px) {
+    /* Navbar */
     nav{
-        height: 110px;
+        height: 40px;
+        margin-top: 0px;
         position: sticky;
-        top: 20px;
+        top: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
+    .right{
+        display:none; /* Hide the "right" */
+    }
+
+    /* Toggle */
+    .right-menu {
+        display:contents; /* Hide the "right-menu" by default */
+    }
+
+
+/* ------------------------------------------ */
     .greet{
         background-size: cover;
     }
@@ -519,6 +596,19 @@ footer{
         width: 100%;
         margin: 20px;
     }
+
+    .parallaxContainer{
+        height: auto;
+    }
+    .parallaxContainer button{
+        margin-bottom: 30px;
+    }
+    /* limitlessContainer */
+    .limitlessContainer{
+        height: auto;
+    }
+
+    /* imgSection */
     .imgSection{
         height: 100%;
         width: 100%;
@@ -554,4 +644,10 @@ footer{
     .downloadButton1{
         width: 300px;
     }
+
+    /* .mainClients{
+        border: 5px solid red;
+    } */
+
+
 }

@@ -1,3 +1,19 @@
+// JavaScript code to handle the menu toggle
+const menuToggle = document.getElementById('menu-toggle');
+const rightMenu = document.querySelector('.right-menu');
+
+// menuToggle.addEventListener('click', () => {
+//     rightMenu.classList.toggle('show-menu');
+// });
+
+function showMenu(){
+    rightMenu.classList.toggle('show-menu');
+
+}
+
+
+//-----------Slider code-------------------------------//
+
 const slides = document.querySelectorAll('.slide');
 let currentSlide = 0;
 
