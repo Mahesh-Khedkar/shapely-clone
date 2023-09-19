@@ -553,6 +553,11 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: blue !important;
+    text-decoration: none;
+}
+
 @media (min-width: 300px) and (max-width: 992px) {
     /* Navbar */
     nav{
@@ -564,6 +569,7 @@ a{
         align-items: center;
         justify-content: space-between;
     }
+
     .right{
         display:none; /* Hide the "right" */
     }
