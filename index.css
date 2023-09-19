@@ -57,8 +57,23 @@ nav select, option{
     color: white;
 }
 
-.menu-toggle{
+.rightToggle{
+    display: none; /* Hide the "right-menu" by default */
+    background: white;
+    color: black;
+    height: auto;
+    width: 50%;
+    margin-top: 390px;
+    margin-left: 0px;
+    /* display: flex; */
+    align-items: baseline;
+    flex-direction: column;
+}
+
+#menu-toggle1{
     /* margin: 30px; */
+    display: none;
+    /* margin-left: 30px; */
 }
 
 .togleContainer{

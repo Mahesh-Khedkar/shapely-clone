@@ -4,8 +4,106 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project</title>
+
+
+    <script>
+        function toggleMenu() 
+        {
+            var rightToggle = document.querySelector('.rightToggle');
+            var rightToggleOpen = document.querySelector('#menu-toggle');
+            var rightToggleClose = document.querySelector('#menu-toggle1');
+
+
+            if (rightToggle.style.display === 'none' || rightToggle.style.display === '' ) 
+            {
+                rightToggle.style.display = 'flex'; // Display the menu
+                rightToggleOpen.style.display = 'none'; // Display the menu close
+                rightToggleClose.style.display = 'flex'; // Display the menu
+            }
+            else 
+            {
+                rightToggle.style.display = 'none'; // Hide the menu
+                rightToggleClose.style.display = 'none'; // Display the menu
+                rightToggleOpen.style.display = 'flex'; // Display the menu close
+            }
+        }
+
+    </script>
 </head>
 <body>
-    <h1>Project14</h1>
+    <!-- Navbar -->
+    <nav>
+        <div class="left">
+            <big><a href="index.html">Shapely Demo</a></big>
+        </div>
+        <div class="right">
+            <button class="homeBtn"><a href="index.html">HOME</a></button>
+            <button><a href="./Blog.html">BLOG</a></button>
+            <button><a href="./Portfolio.html">PORTFOLIO</a></button>
+            <button><a href="./AboutTests.html">ABOUT THE TESTS ∇</a></button>
+            <button><a href="./Level1.html">LEVEL1 ∇</a></button>
+            <!-- <select class="select1">
+                <option value=""><a href="./AboutTests.html">ABOUT THE TESTS</a></option>
+                <option value="">Page Image Allignment</option>
+                <option value="">Page Markup And Formating</option>
+                <option value="">Clearing Floats</option>
+                <option value="">Page With Comments</option>
+                <option value="">Page With Comments Disabled</option>
+            </select> -->
+            <!-- <select>
+                <option value="">Level1</option>
+                <option value="">Level2</option>
+                <option value="">Level2a</option>
+                <option value="">Level2b</option>
+            </select> -->
+            <button><a href="./Shop.html">SHOP</a></button>
+            <button style="color: blue;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+        <!-- Toggle Navbar -->
+        <div class="right right-menu">
+            <button id="menu-toggle" onclick="toggleMenu()">
+                <div class="togleContainer">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </button>
+            <button id="menu-toggle1" onclick="toggleMenu()">
+                <div class="togleContainer">
+                    <h1>❌</h1>
+                </div>
+            </button>
+        </div>
+        <div class="rightToggle">
+            <button class="homeBtn"><a href="index.html">HOME</a></button>
+            <button><a href="./Blog.html">BLOG</a></button>
+            <button><a href="./Portfolio.html">PORTFOLIO</a></button>
+            <button><a href="./AboutTests.html">ABOUT THE TESTS ∇</a></button>
+            <button><a href="./Level1.html">LEVEL1 ∇</a></button>
+                <!-- <select class="select1">
+                <option value=""><a href="./AboutTests.html">ABOUT THE TESTS</a></option>
+                <option value="">Page Image Allignment</option>
+                <option value="">Page Markup And Formating</option>
+                <option value="">Clearing Floats</option>
+                <option value="">Page With Comments</option>
+                <option value="">Page With Comments Disabled</option>
+            </select> -->
+            <select>
+                <option value="">Level1</option>
+                <option value="">Level2</option>
+                <option value="">Level2a</option>
+                <option value="">Level2b</option>
+            </select>
+            <button><a href="./Shop.html">SHOP</a></button>
+            <button style="color: blue;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+
+
+    </nav>
+ 
 </body>
 </html>

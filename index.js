@@ -1,16 +1,25 @@
-// JavaScript code to handle the menu toggle
-const menuToggle = document.getElementById('menu-toggle');
-const rightMenu = document.querySelector('.right-menu');
+// JavaScript code to handle the Navbar menu toggle
 
-// menuToggle.addEventListener('click', () => {
-//     rightMenu.classList.toggle('show-menu');
-// });
+function toggleMenu() 
+{
+    var rightToggle = document.querySelector('.rightToggle');
+    var rightToggleOpen = document.querySelector('#menu-toggle');
+    var rightToggleClose = document.querySelector('#menu-toggle1');
 
-function showMenu(){
-    rightMenu.classList.toggle('show-menu');
 
+    if (rightToggle.style.display === 'none' || rightToggle.style.display === '' ) 
+    {
+        rightToggle.style.display = 'flex'; // Display the menu
+        rightToggleOpen.style.display = 'none'; // Display the menu close
+        rightToggleClose.style.display = 'flex'; // Display the menu
+    }
+    else 
+    {
+        rightToggle.style.display = 'none'; // Hide the menu
+        rightToggleClose.style.display = 'none'; // Display the menu
+        rightToggleOpen.style.display = 'flex'; // Display the menu close
+    }
 }
-
 
 //-----------Slider code-------------------------------//
 
