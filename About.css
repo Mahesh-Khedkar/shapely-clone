@@ -1,0 +1,22 @@
+.firstHalf h1{
+    font-size: 55px;
+    font-weight: 5;
+}
+
+.firstHalf p, li{
+    font-weight: 5;
+    color: gray;
+}
+
+li{
+    line-height: 35px;
+}
+
+@media (min-width: 300px) and (max-width: 992px) {
+    .firstHalf{
+        padding: 10px;
+    }
+    .secondHalf{
+        margin-top: 30px;
+    }
+}

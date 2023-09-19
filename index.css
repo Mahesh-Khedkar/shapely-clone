@@ -38,7 +38,7 @@ nav button{
 }
 
 nav button:hover{
-    color: blue;
+    color: blue !important;
 }
 
 nav select, option{
