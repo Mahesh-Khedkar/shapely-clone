@@ -553,7 +553,7 @@ a{
     text-decoration: none;
 }
 
-@media (min-width: 300px) and (max-width: 779px) {
+@media (min-width: 300px) and (max-width: 992px) {
     /* Navbar */
     nav{
         height: 40px;
