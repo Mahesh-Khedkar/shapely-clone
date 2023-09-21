@@ -1,0 +1,16 @@
+/* ------Card----- */
+.projectCard{
+    width: 100%;
+    height: 600px;
+    background-image: url('https://149842022.v2.pressablecdn.com/shapely/wp-content/uploads/sites/59/2016/12/photo-1443890484047-5eaa67d1d630-1.jpg');
+    block-size: cover;
+    background-position: center;
+    display: flex;
+    align-items:last baseline;
+    justify-content: start;
+    /* border: 1px solid black; */
+}
+
+.blogCardBody a{
+    color: blue;
+}

@@ -32,6 +32,84 @@
             }
         }
 
+            //hover list divs
+
+            function hoverDiv1()
+        {
+            var listDiv1 = document.querySelector('.listDiv1');
+
+            if (listDiv1.style.display === 'none' || listDiv1.style.display === '' ) 
+            {
+                listDiv1.style.display = 'flex'; // Display the menu
+            }
+            else 
+            {
+                listDiv1.style.display = 'none'; // Hide the menu
+            }
+        }
+
+        let hoverBTN1 = document.querySelector('.hoverBTN1');
+        hoverBTN1.addEventListener('mouseover', hoverDiv1);
+
+        function hoverDiv11()
+        {
+            var listDiv1 = document.querySelector('.listDiv1');
+
+            if (listDiv1.style.display === 'flex' || listDiv1.style.display === '' ) 
+            {
+                listDiv1.style.display = 'none'; // Display the menu
+            }
+            else 
+            {
+                listDiv1.style.display = 'flex'; // Hide the menu
+            }
+        }
+
+        // let hoverBTN1 = document.querySelector('.hoverBTN1');
+
+        hoverBTN1.addEventListener('mouseout', hoverDiv11);
+
+
+        function hoverDiv2()
+        {
+            var listDiv2 = document.querySelector('.listDiv2');
+
+
+            if (listDiv2.style.display === 'none' || listDiv2.style.display === '' ) 
+            {
+                listDiv2.style.display = 'flex'; // Display the menu close
+            }
+            else 
+            {
+                listDiv2.style.display = 'none'; // Display the menu
+            }
+        }
+
+        let hoverBTN2 = document.querySelector('.hoverBTN2');
+
+        hoverBTN2.addEventListener('mouseover', hoverDiv2);
+
+
+        function hoverDiv22()
+        {
+            var listDiv2 = document.querySelector('.listDiv2');
+
+
+            if (listDiv2.style.display === 'flex' || listDiv2.style.display === '' ) 
+            {
+                listDiv2.style.display = 'none'; // Display the menu close
+            }
+            else 
+            {
+                listDiv2.style.display = 'flex'; // Display the menu
+            }
+        }
+
+        // let hoverBTN2 = document.querySelector('.hoverBTN2');
+
+        hoverBTN2.addEventListener('mouseout', hoverDiv22);
+
+
     </script>
 </head>
 <body>
@@ -46,20 +124,6 @@
             <button><a href="./Portfolio.html">PORTFOLIO</a></button>
             <button><a href="./AboutTests.html">ABOUT THE TESTS ∇</a></button>
             <button><a href="./Level1.html">LEVEL1 ∇</a></button>
-            <!-- <select class="select1">
-                <option value=""><a href="./AboutTests.html">ABOUT THE TESTS</a></option>
-                <option value="">Page Image Allignment</option>
-                <option value="">Page Markup And Formating</option>
-                <option value="">Clearing Floats</option>
-                <option value="">Page With Comments</option>
-                <option value="">Page With Comments Disabled</option>
-            </select> -->
-            <!-- <select>
-                <option value="">Level1</option>
-                <option value="">Level2</option>
-                <option value="">Level2a</option>
-                <option value="">Level2b</option>
-            </select> -->
             <button><a href="./Shop.html">SHOP</a></button>
             <button style="color: blue;">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -86,20 +150,6 @@
             <button><a href="./Portfolio.html">PORTFOLIO</a></button>
             <button><a href="./AboutTests.html">ABOUT THE TESTS ∇</a></button>
             <button><a href="./Level1.html">LEVEL1 ∇</a></button>
-                <!-- <select class="select1">
-                <option value=""><a href="./AboutTests.html">ABOUT THE TESTS</a></option>
-                <option value="">Page Image Allignment</option>
-                <option value="">Page Markup And Formating</option>
-                <option value="">Clearing Floats</option>
-                <option value="">Page With Comments</option>
-                <option value="">Page With Comments Disabled</option>
-            </select> -->
-            <select>
-                <option value="">Level1</option>
-                <option value="">Level2</option>
-                <option value="">Level2a</option>
-                <option value="">Level2b</option>
-            </select>
             <button><a href="./Shop.html">SHOP</a></button>
             <button style="color: blue;">
                 <i class="fa-solid fa-magnifying-glass"></i>
@@ -108,7 +158,26 @@
 
 
     </nav>
- 
+    <div class="navHoverDiv">
+        <section class="alignSection">
+            <section class="listDiv1">
+                <button><a href="./AboutTests.html">Page Image Allignment</a></button>
+                <button><a href="./AboutTests.html">Page Markup And Formating</a></button>
+                <button><a href="./AboutTests.html">Clearing Floats</a></button>
+                <button><a href="./AboutTests.html">Page With Comments</a></button>
+                <button><a href="./AboutTests.html">Page With Comments Disabled</a></button>
+            </section>
+    
+            <section class="listDiv2">
+                <button><a href="./Level1.html">Level1</a></button>
+                <button><a href="./Level1.html">Level2</a></button>
+                <button><a href="./Level1.html">Level2a</a></button>
+                <button><a href="./Level1.html">Level2b</a></button>
+            </section>
+        </section>
+
+    </div>
+
 <!-- Blog -->
 
     <div class="blog">
@@ -386,7 +455,7 @@
             </section>
             <br>
             <div class="goToTop">
-                <a href="index.html">
+                <a href="./Blog.html">
                     <section>
                         <strong>^</strong>
                     </section>

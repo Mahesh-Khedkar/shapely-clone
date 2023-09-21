@@ -41,6 +41,77 @@ nav button:hover{
     color: blue !important;
 }
 
+.navHoverDiv{
+    /* height: 1px; */
+    height: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* border: 1px solid red; */
+}
+.alignSection{
+    display: flex;
+    margin-right: 17%;
+}
+
+.alignSection a{
+    color: black;
+}
+.listDiv1{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    /* margin-left: 34%; */
+    /* margin-right: ; */
+    height: auto;
+    width: auto;
+    padding: 2px;
+    border-radius: 10px;
+    background: white;
+    transform: translate(0, 70px);
+    border: 1px solid black; 
+}
+
+.listDiv1 button{
+    list-style: none;
+    /* line-height: 10px; */
+    padding: 5px;
+    border: 0px;
+}
+
+.listDiv1 button:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+
+.listDiv2{
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    /* margin-left: 55%; */
+    margin: 10px;
+    padding: 2px;
+    width: 70px;
+    border-radius: 10px;
+    background: white;
+    transform: translate(0, 60px);
+    border: 1px solid black; 
+}
+
+.listDiv2 button{
+    list-style: none;
+    /* line-height: 10px; */
+    padding: 5px;
+    border: 0px;
+}
+
+.listDiv2 button:hover{
+    color: blue;
+    cursor: pointer;
+}
+
+
 nav select, option{
     border: 0px;
     margin: 10px;
